@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+   <body>
+
+   <center>
+      <header> <h1> Total Number of rows</h1> </header>
+       <h1>COUNT:{data[0]}</h1>
+      <br> <br>
+      <table border=1>
+    <thead>
+    <td>Incremented Value of Depth</td>
+    </thead>
+    <tbody>
+    {% for rows in  data %}
+
+        <tr>
+            <td>{{rows}}</td>
+        </tr>
+
+    {% endfor %}
+
+    </tbody>
+</table>
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </center>
+   </body>
+</html>

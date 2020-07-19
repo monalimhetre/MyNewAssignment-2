@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<body>
+
+		<center>
+		<header> <h1> Range </h1> </header>
+		<br> <br>
+		<h1> </h1>
+		<br>
+		<label><h2>Earthquakes for range of Week:</h2></label><br>
+        <form action = "{{ url_for('values') }}" method = "POST">
+		  <label>Mag From:</label>
+          <input type = "text"                 
+				 name = "mag1"
+                  />
+		  <label>Mag To:</label>
+          <input type = "text"
+                 name = "mag2"
+                 />
+			<label>Date From:</label>
+			 <input type = "date"
+                 name = "dd"
+                 />
+		  <br>
+		  <br>
+		  <input type = "submit" value = "submit" /><br>
+		</form>
+		<label><h2>Earthquakes for range for a Months:</h2></label><br>
+		<form action = "{{ url_for('values1') }}" method = "POST">
+		  <label>Mag From:</label>
+          <input type = "text"
+				 name = "mag1"
+                  />
+		  <label>Mag To:</label>
+          <input type = "text"
+                 name = "mag2"
+                 />
+			<label>Date From:</label>
+			 <input type = "date"
+                 name = "dd"
+                 />
+
+		  <br>
+		  <br>
+		  <input type = "submit" value = "submit" /><br>
+		</form>
+		<label><h2>Earthquakes for range for days:</h2></label><br>
+		<form action = "{{ url_for('values2') }}" method = "POST">
+		  <label>Mag From:</label>
+          <input type = "text"
+				 name = "mag1"
+                  />
+		  <label>Mag To:</label>
+          <input type = "text"
+                 name = "mag2"
+                 />
+			<label>Date From:</label>
+			 <input type = "date"
+                 name = "dd"
+                 />
+			<label>Date To:</label>
+			 <input type = "date"
+                 name = "dds"
+                 />
+		  <br>
+		  <br>
+		  <input type = "submit" value = "submit" /><br>
+		</form>
+		</center>
+    </body>
+</html>
+        

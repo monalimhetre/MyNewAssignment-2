@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+   <body>
+
+   <center>
+      <header> <h1> The Earthquake Records between the given range of Magnitude </h1>
+      </header>
+      <br> <br>
+       <table border=1>
+    <thead>
+    <td>time</td>
+    <td>latitude</td>
+    <td>longitude</td>
+    <td>depth</td>
+    <td>mag</td>
+	<td>magType</td>
+    <td>nst</td>
+    <td>gap</td>
+    <td>dmin</td>
+    <td>rms</td>
+    <td>net</td>
+    <td>id</td>
+    <td>updated</td>
+    <td>place</td>
+    <td>horizontalError</td>
+    <td>depthError</td>
+    <td>magError</td>
+    <td>magNst</td>
+    <td>type</td>
+    <td>status</td>
+    <td>locationSource</td>
+    <td>magSource</td>
+    </thead>
+    <tbody>
+    {% for rows in rows %}
+
+        <tr>
+            <td>{{rows[1]}}</td>
+            <td>{{rows[2]}}</td>
+            <td>{{rows[3]}}</td>
+            <td>{{rows[4]}}</td>
+            <td>{{rows[5]}}</td>
+            <td>{{rows[6]}}</td>
+            <td>{{rows[7]}}</td>
+            <td>{{rows[8]}}</td>
+            <td>{{rows[9]}}</td>
+            <td>{{rows[10]}}</td>
+            <td>{{rows[11]}}</td>
+            <td>{{rows[12]}}</td>
+            <td>{{rows[13]}}</td>
+            <td>{{rows[14]}}</td>
+            <td>{{rows[15]}}</td>
+            <td>{{rows[16]}}</td>
+            <td>{{rows[17]}}</td>
+            <td>{{rows[18]}}</td>
+            <td>{{rows[19]}}</td>
+            <td>{{rows[20]}}</td>
+            <td>{{rows[21]}}</td>
+            <td>{{rows[22]}}</td>
+        </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+
+      <br>
+      <h2> <a href = "/">Home</a> </h2>
+   </center>
+   </body>
+</html>
